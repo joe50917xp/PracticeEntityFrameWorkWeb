@@ -1,0 +1,11 @@
+1. 加入ADO.NET 實體資料模型遇到選不到寫在WebConfig裡的Oracle DB連線
+
+解決方式: 需安裝Oracle Developer Tools for Visual Studio
+
+安裝完成即選的到
+
+2. 選完案下一步會閃退回加入畫面
+
+解決方式: Oracle Developer Tool與專案參考使用的檢查OracleDataAccess版本是否一致(一定不一致)，
+刪除原先的參考OracleDataAccess、OracleDataAccess.EntityFramwork，使用右鍵加入參考選取位置加入OracleDataAccess.dll、OracleDataAccess.EntityFramwork.dll
+檢查版本一致再加入，然後再使用Nuget加入Oracle.ManagedDataAccess、Oracle.ManagedDataAccess.EntityFramwork，就沒問題了。

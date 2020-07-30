@@ -1,0 +1,63 @@
+﻿@model IEnumerable<JoeCodeMvcOracleExample.UI.Web.ResourceAccess.Entities.IRCS_ARR_FLT_CARRIER>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.IRCS_FLT_CARRIER_EN)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IRCS_FLT_CARRIER_CN)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IRCS_FLT_CARRIER_CREATE_ID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IRCS_FLT_CARRIER_CREATE_DT)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IRCS_FLT_CARRIER_UPDATE_ID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IRCS_FLT_CARRIER_UPDATE_DT)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.IRCS_FLT_CARRIER_EN)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IRCS_FLT_CARRIER_CN)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IRCS_FLT_CARRIER_CREATE_ID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IRCS_FLT_CARRIER_CREATE_DT)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IRCS_FLT_CARRIER_UPDATE_ID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IRCS_FLT_CARRIER_UPDATE_DT)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new {item.IRCS_FLT_CARRIER_CD,item.IRCS_FLT_CARRIER_STN}) |
+            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+        </td>
+    </tr>
+}
+
+</table>

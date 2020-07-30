@@ -1,0 +1,66 @@
+﻿@model JoeCodeMvcOracleExample.UI.Web.ResourceAccess.Entities.IRCS_ARR_FLT_CARRIER
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>IRCS_ARR_FLT_CARRIER</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.IRCS_FLT_CARRIER_EN)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IRCS_FLT_CARRIER_EN)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IRCS_FLT_CARRIER_CN)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IRCS_FLT_CARRIER_CN)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IRCS_FLT_CARRIER_CREATE_ID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IRCS_FLT_CARRIER_CREATE_ID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IRCS_FLT_CARRIER_CREATE_DT)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IRCS_FLT_CARRIER_CREATE_DT)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IRCS_FLT_CARRIER_UPDATE_ID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IRCS_FLT_CARRIER_UPDATE_ID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IRCS_FLT_CARRIER_UPDATE_DT)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IRCS_FLT_CARRIER_UPDATE_DT)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
